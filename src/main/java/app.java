@@ -1,10 +1,7 @@
-import static  spark.Spark.*;
+import static spark.Spark.*;
 
-public class App{
-  public static void main(String[]args){
-    get("/hello", (request, response) => "Hello Friend!");
-
+public class app {
+  public static void main(String[] args) {
+     get("/hello", (request, response) -> "Hello Friend!");
   }
-
-
 }
